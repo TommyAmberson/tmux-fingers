@@ -1,5 +1,7 @@
 module Fingers
-  DISALLOWED_CHARS = /[cimqn]/
+  # Letters that cannot be hints, since every hint key is also bound with
+  # ctrl: C-c and q exit, C-i is the same key code as Tab and C-m as Enter.
+  DISALLOWED_CHARS = /[cimq]/
 
   ALPHABET_MAP = {
     "qwerty":             "asdfqwerzxcvjklmiuopghtybn",

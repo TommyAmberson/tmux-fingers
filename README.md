@@ -258,6 +258,12 @@ Hints are generated taking optimal finger movement into account. You can choose 
   * `dvorak-right-hand`
   * `dvorak-homerow`
 
+Whatever the layout, the letters `c`, `i`, `m` and `q` are never used in
+hints, because they clash with other key bindings in **[fingers]** mode:
+<kbd>q</kbd> and <kbd>CTRL</kbd> + <kbd>c</kbd> exit, <kbd>CTRL</kbd> +
+<kbd>i</kbd> is the same key as <kbd>TAB</kbd> and <kbd>CTRL</kbd> +
+<kbd>m</kbd> the same as <kbd>ENTER</kbd>.
+
 ## @fingers-show-copied-notification
 
 `default: 0`
