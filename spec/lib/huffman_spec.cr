@@ -6,6 +6,13 @@ expected_50 = ["aaa", "aas", "aad", "aaf", "asa", "ass", "asd", "asf", "ada", "a
 alphabet_a = ["a", "s", "d", "f"]
 
 describe Huffman do
+  it "should use the first keys of the alphabet when they suffice" do
+    huffman = Huffman.new
+
+    result = huffman.generate_hints(alphabet = alphabet_a, n = 2)
+    result.should eq ["a", "s"]
+  end
+
   it "should work for 5" do
     huffman = Huffman.new
 

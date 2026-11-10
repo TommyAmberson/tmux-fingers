@@ -25,8 +25,10 @@ class Huffman
     cached_result = read_from_cache(alphabet, n)
     return cached_result unless cached_result.nil?
 
+    # Hints are handed out from the end of the list, so returning the whole
+    # alphabet would give a handful of matches its hardest keys.
     if n <= alphabet.size
-      return alphabet
+      return alphabet.first(n)
     end
 
     setup!(alphabet: alphabet, n: n)
