@@ -268,6 +268,23 @@ hints, because they clash with other key bindings in **[fingers]** mode:
 <kbd>i</kbd> is the same key as <kbd>TAB</kbd> and <kbd>CTRL</kbd> +
 <kbd>m</kbd> the same as <kbd>ENTER</kbd>.
 
+## @fingers-alphabet-override
+
+`default: ""`
+
+Letters to build hints from, best keys first, for layouts that are not built
+in. When set it takes precedence over `@fingers-keyboard-layout`.
+
+Only lowercase letters are allowed. As with the built-in layouts, `c`, `i`,
+`m` and `q` are skipped, and so are repeated letters, so the two lines below
+give the same hints. At least two different letters must be left after
+that, otherwise the configuration is rejected.
+
+```
+set -g @fingers-alphabet-override 'cieahtsnbyouldwvgxjkrmfpzq'
+set -g @fingers-alphabet-override 'eahtsnbyouldwvgxjkrfpz'
+```
+
 ## @fingers-show-copied-notification
 
 `default: 0`

@@ -46,7 +46,9 @@ module Fingers
     # computed properties
 
     def alphabet
-      Fingers::ALPHABET_MAP[keyboard_layout].split("").reject do |char|
+      letters = alphabet_override.empty? ? Fingers::ALPHABET_MAP[keyboard_layout] : alphabet_override
+
+      letters.split("").uniq.reject do |char|
         char.match(Fingers::DISALLOWED_CHARS)
       end
     end
