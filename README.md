@@ -253,6 +253,10 @@ Hints are generated taking optimal finger movement into account. You can choose 
   * `colemak-left-hand`
   * `colemak-right-hand`
   * `colemak-homerow`
+  * `engram`
+  * `engram-left-hand`
+  * `engram-right-hand`
+  * `engram-homerow`
   * `dvorak`
   * `dvorak-left-hand`
   * `dvorak-right-hand`

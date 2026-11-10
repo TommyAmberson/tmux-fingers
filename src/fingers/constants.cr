@@ -24,6 +24,10 @@ module Fingers
     "colemak-homerow":    "arstneiodh",
     "colemak-left-hand":  "arstqwfpzxcv",
     "colemak-right-hand": "neioluymjhk",
+    "engram":             "cieahtsnbyouldwvgxjkrmfpzq",
+    "engram-homerow":     "cieahtsn",
+    "engram-left-hand":   "cieabyougxjk",
+    "engram-right-hand":  "htsnldwvrmfpzq",
   }
 
   BUILTIN_PATTERNS = {
