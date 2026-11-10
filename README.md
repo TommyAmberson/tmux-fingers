@@ -164,6 +164,7 @@ This command will also receive the following:
 
   * `MODIFIER`: environment variable set to `ctrl`, `alt`, or `shift` specififying which modifier was used when selecting the match.
   * `HINT`: environment variable the selected letter hint itself ( ex: `q`, `as`, etc... ).
+  * `PANE_ID`: environment variable set to the id of the pane the match was selected in ( ex: `%3` ).
   * `stdin`: copied text will be piped to `@fingers-copy-command`.
 
 You can also use the following special values:

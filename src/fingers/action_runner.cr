@@ -99,7 +99,7 @@ module Fingers
     end
 
     def action_env
-      {"MODIFIER" => modifier, "HINT" => hint}
+      {"MODIFIER" => modifier, "HINT" => hint, "PANE_ID" => original_pane.pane_id}
     end
 
     private property action : String | Nil do
